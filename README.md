@@ -68,7 +68,7 @@ print(alz.head()[["PatientID", "Age", "Gender", "Ethnicity", "BMI", "Smoking", "
 
 ### EDA
 
-I first created a univariate plot that shows the distribution of patients according to their diagnosis.
+I first created a univariate plot that shows the distribution of patients according to their diagnosis:
 
 <iframe
   src="assets/html.plot1.html"
@@ -78,4 +78,20 @@ I first created a univariate plot that shows the distribution of patients accord
 ></iframe>
 
 
+My second univariate plot shows the prevalence of Alzheimer's Disease across races:
 
+<iframe
+  src="assets/html.plot1 copy.html"
+  width="700"
+  height="500"
+  frameborder="0"
+></iframe>
+
+My third univariate plot shows the prevalence of Alzheimer's Disease across education level:
+
+<iframe
+  src="assets/html.plot1 copy2.html"
+  width="700"
+  height="500"
+  frameborder="0"
+></iframe>
