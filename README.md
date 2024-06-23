@@ -66,7 +66,7 @@ print(alz.head()[["PatientID", "Age", "Gender", "Ethnicity", "BMI", "Smoking", "
 |      4754 |  74 |      1 |         0 | 33.80 |       1 |              8.43 |         0 |
 |      4755 |  89 |      0 |         0 | 20.72 |       0 |              6.31 |         0 |
 
-### EDA
+### EDA: Univariate Analysis
 
 I first created a univariate plot that shows the distribution of patients according to their diagnosis:
 
@@ -91,6 +91,21 @@ My third univariate plot shows the prevalence of Alzheimer's Disease across educ
 
 <iframe
   src="assets/html.plot1 copy2.html"
+  width="700"
+  height="500"
+  frameborder="0"
+></iframe>
+
+### EDA: Bivariate Analysis
+
+In our dataset, the "MemoryComplaints" variable refers to subjective experiences where individuals express dissatisfaction or concern about their memory function. These concerns are self-reported. 
+
+The "Forgetfulness" variable refers to the actual experience of forgetting information or events. It is an observable behavior where indiviudals fail to recall something that they had previously learned or experienced. 
+
+These bivariate plots along with their respective tables show the distribution of diagnosis based on these two variables:
+
+<iframe
+  src="assets/html.plot1 copy3.html"
   width="700"
   height="500"
   frameborder="0"
