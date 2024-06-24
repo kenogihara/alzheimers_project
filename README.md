@@ -179,11 +179,63 @@ The model should be trained only on features that are relevant to the prediction
 
 <iframe
   src="assets/heatmap.html"
-  width="800"
-  height="600"
+  width="1000"
+  height="800"
   frameborder="0"
 ></iframe>
 
 
-We see that "MMSE", "FunctionalAssessment", and "ADL" are the features that are most associated with diagnosis.
+We see that "MMSE", "FunctionalAssessment", and "ADL" are the top 3 numerical features that are most associated with diagnosis.
 
+I used a chi-squared test to determine the best categorical features:
+
+```py
+def is_correlated(x, y):
+    cross_table = pd.crosstab(index = alz[x], columns = alz[y])
+    chi_sq_result = chi2_contingency(cross_table,)
+    p, c = chi_sq_result[1], "correlated" if chi_sq_result[1] < 0.05 else "not correlated"
+    return (x, p, c)
+
+chi_sq_results = []
+for column in categorical_columns:
+    result = is_correlated(column, "Diagnosis")
+    chi_sq_results.append(result)
+    
+chi_sq_results.sort(key=lambda x: x[1])
+
+print(chi_sq_results)
+
+```
+
+1. ('MemoryComplaints', 1.5266050985264054e-45, 'correlated')
+2. ('BehavioralProblems', 4.731446795211873e-25, 'correlated')
+3. ('Ethnicity', 0.09780307184026778, 'not correlated')
+4. ('Hypertension', 0.11808887156379336, 'not correlated')
+5. ('FamilyHistoryAlzheimers', 0.14069795394928386, 'not correlated')
+6. ('Diabetes', 0.16224495200138433, 'not correlated')
+7. ('CardiovascularDisease', 0.1628367346921118, 'not correlated')
+8. ('EducationLevel', 0.21650771973324673, 'not correlated')
+9. ('Disorientation', 0.27978377696750084, 'not correlated')
+10. ('Gender', 0.35381831348465786, 'not correlated')
+11. ('HeadInjury', 0.3603226855585838, 'not correlated')
+12. ('PersonalityChanges', 0.37175710638032144, 'not correlated')
+13. ('Confusion', 0.4045413830124688, 'not correlated')
+14. ('DifficultyCompletingTasks', 0.7198556855473033, 'not correlated')
+15. ('Depression', 0.8283335436917469, 'not correlated')
+16. ('Smoking', 0.860493227376371, 'not correlated')
+17. ('Forgetfulness', 1.0, 'not correlated')
+
+"MemoryComplaints" and "BehavioralProblems" are most associated with diagnosis but for the sake of this project I used the top 7 categorical features along with the 3 numerical features we established previously.
+
+# Final Model
+
+
+#### Model Performance Metrics
+
+
+|                          | Logistic Regression | Decision Tree Classifier | Random Forest Classifier | Gradient Boosting Classifier |
+|:-------------------------|--------------------:|-------------------------:|-------------------------:|-----------------------------:|
+| **Test score**           |              0.8253 |                  0.8996  |                  0.9349  |                      0.9498  |
+| **Precision score**      |              0.7865 |                  0.8859  |                  0.9399  |                      0.9378  |
+| **Recall score**         |              0.7143 |                  0.8316  |                  0.8776  |                      0.9235  |
+| **F1 score**             |              0.7487 |                  0.8579  |                  0.9077  |                      0.9306  |
