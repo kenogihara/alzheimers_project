@@ -283,13 +283,13 @@ Four different classifiers are trained and evaluated:
 
 
 
-
 |                          | Logistic Regression | Decision Tree Classifier | Random Forest Classifier | Gradient Boosting Classifier |
 |:-------------------------|--------------------:|-------------------------:|-------------------------:|-----------------------------:|
 | **Test score**           |              0.8253 |                  0.8996  |                  0.9349  |                      0.9498  |
 | **Precision score**      |              0.7865 |                  0.8859  |                  0.9399  |                      0.9378  |
 | **Recall score**         |              0.7143 |                  0.8316  |                  0.8776  |                      0.9235  |
 | **F1 score**             |              0.7487 |                  0.8579  |                  0.9077  |                      0.9306  |
+
 
 
 
