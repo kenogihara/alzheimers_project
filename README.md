@@ -179,8 +179,8 @@ The model should be trained only on features that are relevant to the prediction
 
 <iframe
   src="assets/heatmap.html"
-  width="800"
-  height="600"
+  width="500"
+  height="400"
   frameborder="0"
 ></iframe>
 
