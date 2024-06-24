@@ -289,6 +289,8 @@ Four different classifiers are trained and evaluated:
 | **F1 score**             |              0.7487 |                  0.8579  |                  0.9077  |                      0.9306  |
 
 
+
+
 Based on our results, the Gradient Boosting Classifier is the most promising model. It has the highest ROC AUC at 0.94. This means that the model has a 94% chance of correctly distinguishing between patients with and without Alzheimer's Disease across various threshold levels. The ROC AUC score indicates strong overall discriminative power.
 Further analysis shows that the true positive rate, also known as, recall score is 92%. This means that the model incorrectly identifies a person as negative 8% of the time. Optimizing a model's recall is especially important in the field of medicine since
 false negatives are worse than false positives. 
