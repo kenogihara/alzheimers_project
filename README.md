@@ -254,32 +254,34 @@ Four different classifiers are trained and evaluated:
 
 <iframe
   src="assets/roc_curve_LogisticRegression(random_state=42).html"
-  width="800"
-  height="600"
+  width="900"
+  height="700"
   frameborder="0"
 ></iframe>
 
 
 <iframe
   src="assets/roc_curve_DecisionTreeClassifier(random_state=42).html"
-  width="800"
-  height="600"
+  width="900"
+  height="700"
   frameborder="0"
 ></iframe>
 
 <iframe
   src="assets/roc_curve_RandomForestClassifier(random_state=42).html"
-  width="800"
-  height="600"
+  width="900"
+  height="700"
   frameborder="0"
 ></iframe>
 
 <iframe
   src="assets/roc_curve_GradientBoostingClassifier(random_state=42).html"
-  width="800"
-  height="600"
+  width="900"
+  height="700"
   frameborder="0"
 ></iframe>
+
+
 
 
 |                          | Logistic Regression | Decision Tree Classifier | Random Forest Classifier | Gradient Boosting Classifier |
