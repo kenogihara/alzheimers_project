@@ -207,6 +207,8 @@ print(chi_sq_results)
 
 ```
 
+#### Top Categorical Features Based On Chi-Squared Test Results:
+
 1. ('MemoryComplaints', 1.5266050985264054e-45, 'correlated')
 2. ('BehavioralProblems', 4.731446795211873e-25, 'correlated')
 3. ('Ethnicity', 0.09780307184026778, 'not correlated')
@@ -229,8 +231,54 @@ print(chi_sq_results)
 
 # Final Model
 
+### Data Preparation
+- **Splitting Data**: The data is split into training and test sets using `train_test_split`.
+
+- **Standardizing Data**: The features are standardized to have a mean of 0 and a standard deviation of 1 using `StandardScaler`.
+
+### Model Training and Evaluation
+A function `train_and_evaluate` is defined to:
+- Train the classifier.
+- Make predictions.
+- Evaluate the model performance using metrics such as Test Score, Precision, Recall, and F1 Score.
+- Plot the ROC curve to visualize the performance of the classifier.
+
+### Model Comparisons
+Four different classifiers are trained and evaluated:
+- Logistic Regression
+- Decision Tree
+- Random Forest
+- Gradient Boosting
 
 #### Model Performance Metrics
+
+<iframe
+  src=assets/roc_curve_LogisticRegression(random_state=42).html"
+  width="800"
+  height="600"
+  frameborder="0"
+></iframe>
+
+<iframe
+  src=assets/roc_curve_DecisionTreeClassifier(random_state=42).html"
+  width="800"
+  height="600"
+  frameborder="0"
+></iframe>
+
+<iframe
+  src=assets/roc_curve_RandomForestClassifier(random_state=42).html"
+  width="800"
+  height="600"
+  frameborder="0"
+></iframe>
+
+<iframe
+  src=assets/roc_curve_GradientBoostingClassifier(random_state=42).html"
+  width="800"
+  height="600"
+  frameborder="0"
+></iframe>
 
 
 |                          | Logistic Regression | Decision Tree Classifier | Random Forest Classifier | Gradient Boosting Classifier |
@@ -239,3 +287,11 @@ print(chi_sq_results)
 | **Precision score**      |              0.7865 |                  0.8859  |                  0.9399  |                      0.9378  |
 | **Recall score**         |              0.7143 |                  0.8316  |                  0.8776  |                      0.9235  |
 | **F1 score**             |              0.7487 |                  0.8579  |                  0.9077  |                      0.9306  |
+
+
+Based on our results, the Gradient Boosting Classifier is the most promising model. It has the highest ROC AUC at 0.94. This means that the model has a 94% chance of correctly distinguishing between patients with and without Alzheimer's Disease across various threshold levels. The ROC AUC score indicates strong overall discriminative power.
+Further analysis shows that the true positive rate, also known as, recall score is 92%. This means that the model incorrectly identifies a person as negative 8% of the time. Optimizing a model's recall is especially important in the field of medicine since
+false negatives are worse than false positives. 
+
+#### Full Code
+For the full code and more details, please refer to [Jupyter Notebook](https://github.com/kenogihara/alzheimers_project/blob/main/alzheimers_disease_project.ipynb).
