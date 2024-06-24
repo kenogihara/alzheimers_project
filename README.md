@@ -104,14 +104,14 @@ The "Forgetfulness" variable refers to the actual experience of forgetting infor
 
 These bivariate plots along with their respective tables show the distribution of diagnosis based on these two variables:
 
-| ForgetfulnessCat   |   Diagnosis |
-|:-------------------|------------:|
-| Does not Forget    |    0.353764 |
-| Forgets            |    0.353395 |
-
 <iframe
   src="assets/test.html"
   width="700"
   height="500"
   frameborder="0"
 ></iframe>
+
+| ForgetfulnessCat   |   Diagnosis |
+|:-------------------|------------:|
+| Does not Forget    |    0.353764 |
+| Forgets            |    0.353395 |
