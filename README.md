@@ -253,28 +253,28 @@ Four different classifiers are trained and evaluated:
 #### Model Performance Metrics
 
 <iframe
-  src=assets/roc_curve_LogisticRegression(random_state=42).html"
+  src="assets/roc_curve_LogisticRegression(random_state=42).html"
   width="800"
   height="600"
   frameborder="0"
 ></iframe>
 
 <iframe
-  src=assets/roc_curve_DecisionTreeClassifier(random_state=42).html"
+  src="assets/roc_curve_DecisionTreeClassifier(random_state=42).html"
   width="800"
   height="600"
   frameborder="0"
 ></iframe>
 
 <iframe
-  src=assets/roc_curve_RandomForestClassifier(random_state=42).html"
+  src="assets/roc_curve_RandomForestClassifier(random_state=42).html"
   width="800"
   height="600"
   frameborder="0"
 ></iframe>
 
 <iframe
-  src=assets/roc_curve_GradientBoostingClassifier(random_state=42).html"
+  src="assets/roc_curve_GradientBoostingClassifier(random_state=42).html"
   width="800"
   height="600"
   frameborder="0"
