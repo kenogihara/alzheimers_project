@@ -116,6 +116,7 @@ These bivariate plots along with their respective tables show the distribution o
 | Forgets            |    0.353395 |
 
 
+
 According to the first mosaic plot, we see that the majority of patients are not considered forgetful. Regardless, in both categories, the proportion of those who are diagnosed are approximately the same. This shows that the presence of forgetfulness is not a good indicator of Alzheimer's Disease.
 
 #### Mosaic Plot #2: Relationship Between MemoryComplaints and Diagnosis
@@ -148,9 +149,20 @@ According to the second mosaic plots, we see that the majority of patients do no
 
 I chose a significance level of 0.05. Here are the results:
 
+
+```py
+print(f"p_value: {p_value}")
+```
+
+p_value: 0.0
+
 <iframe
   src="assets/html.plot1 copy3.html"
   width="700"
   height="500"
   frameborder="0"
 ></iframe>
+
+Our p-value of 0.0 suggests that the alternative hypothesis is true. Therefore, we will reject the null hypothesis.
+There is enough evidence to suggest that the differences are not due to random chance and that those who report
+memory complaints are indeed more likely to be diagnosed with Alzheimer's Disease.
