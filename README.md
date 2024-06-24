@@ -110,3 +110,8 @@ These bivariate plots along with their respective tables show the distribution o
   height="500"
   frameborder="0"
 ></iframe>
+
+| ForgetfulnessCat   |   Diagnosis |
+|:-------------------|------------:|
+| Does not Forget    |    0.353764 |
+| Forgets            |    0.353395 |
