@@ -179,9 +179,11 @@ The model should be trained only on features that are relevant to the prediction
 
 <iframe
   src="assets/heatmap.html"
-  width="500"
-  height="400"
+  width="800"
+  height="600"
   frameborder="0"
 ></iframe>
 
+
+We see that "MMSE", "FunctionalAssessment", and "ADL" are the features that are most associated with diagnosis.
 
