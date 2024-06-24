@@ -157,7 +157,7 @@ print(f"p_value: {p_value}")
 p_value: 0.0
 
 <iframe
-  src="assets/html.plot1 copy3.html"
+  src="assets/html_hypothesis_testing.html"
   width="700"
   height="500"
   frameborder="0"
