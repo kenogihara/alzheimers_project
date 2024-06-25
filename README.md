@@ -229,7 +229,7 @@ print(chi_sq_results)
 
 "MemoryComplaints" and "BehavioralProblems" are most associated with diagnosis but for the sake of this project I used the top 7 categorical features along with the 3 numerical features we established previously.
 
-# Final Model
+## Final Model
 
 ### Data Preparation
 - **Splitting Data**: The data is split into training and test sets using `train_test_split`.
