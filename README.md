@@ -133,7 +133,7 @@ According to the first mosaic plot, we see that the majority of patients are not
 | No Memory Complaints   | 0.278496    |
 
 
-According to the second mosaic plots, we see that the majority of patients do not report any memory complaints. Among these patients, approximately 28% are diagnosed with Alzheimer's Disease. On the other hand, among those who report memory complaints, 64% are diagnosed with Alzeimer's Disease. **But how do we know if this is actually true?** In the next section, I will perform permutation testing to see if these differences are due to random chance.
+According to the second mosaic plots, we see that the majority of patients do not report any memory complaints. Among these patients, approximately 28% are diagnosed with Alzheimer's Disease. On the other hand, among those who report memory complaints, 64% are diagnosed with Alzheimer's Disease. **But how do we know if this is actually true?** In the next section, I will perform permutation testing to see if these differences are due to random chance.
 
 ## Hypothesis Testing
 
